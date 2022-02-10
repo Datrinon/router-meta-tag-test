@@ -57,7 +57,6 @@ export default MetaTags
 
 
 MetaTags.propTypes = {
-  url: PropTypes.string,
   type: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,

@@ -1,5 +1,20 @@
 [
   {
-    url: ""
+    "title": "Meta Tags - Home",
+    "type": "website",
+    "description": "It's a page about testing the meta tag.",
+    "image": "https://cdn.searchenginejournal.com/wp-content/uploads/2020/07/important-meta-tags-5f203655f1aa8-1520x800.jpg"
+  },
+  {
+    "title": "Meta Tags - About",
+    "type": "website",
+    "description": "About this meta page.",
+    "image": "https://cdn.searchenginejournal.com/wp-content/uploads/2020/07/important-meta-tags-5f203655f1aa8-1520x800.jpg"
+  },
+  {
+    "title": "Meta Tags - Help",
+    "type": "website",
+    "description": "Help on the meta page.",
+    "image": "https://cdn.searchenginejournal.com/wp-content/uploads/2020/07/important-meta-tags-5f203655f1aa8-1520x800.jpg"
   }
 ]

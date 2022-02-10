@@ -11,7 +11,10 @@ import Page from './Page';
 
 import { MetaTagGroup } from './../models/MetaTagGroup';
 
+import metaInfo from "../../data/meta-tag.json";
+
 function App() {
+
   return (
     <HelmetProvider>
       <Helmet>
@@ -25,7 +28,7 @@ function App() {
               <Route
                 path="/"
                 element={
-                  <Page meta={new MetaTagGroup("App Home", "C", "D", "E")}>
+                  <Page meta={{...metaInfo[0]}}>
                     <Home />
                   </Page>
                 }
@@ -33,7 +36,7 @@ function App() {
               <Route
                 path="/about"
                 element={
-                  <Page meta={new MetaTagGroup("App About", "3", "4", "5")}>
+                  <Page meta={{...metaInfo[1]}}>
                     <About />
                   </Page>
                 }
@@ -41,7 +44,7 @@ function App() {
               <Route
                 path="/help"
                 element={
-                  <Page meta={new MetaTagGroup("App Help", "X", "W", "Z")}>
+                  <Page meta={{...metaInfo[2]}}>
                     <Help />
                   </Page>
                 }
