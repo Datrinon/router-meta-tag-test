@@ -52,8 +52,6 @@ export function MetaDiagnostic() {
     );
   }
 
-  console.log(metas);
-
   return <div className="meta-diagnostic">
     <h2>Meta Information</h2>
     <div>

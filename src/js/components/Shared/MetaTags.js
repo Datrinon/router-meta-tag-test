@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Helmet } from 'react-helmet-async';
 
 /**
  * Regex which extracts the domain from any given url. Use url.split(GET_DOMAIN_REGEX) and get the capture group at index 1.
@@ -26,7 +27,7 @@ const GET_DOMAIN_REGEX = new RegExp(/^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?(
 function MetaTags({ url, type, title, description, image }) {
 
   return (
-    <>
+    <Helmet>
       {/* HTML Meta Tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
@@ -45,7 +46,7 @@ function MetaTags({ url, type, title, description, image }) {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description}/>
       <meta name="twitter:image" content={description}/>
-    </>
+    </Helmet>
 
   )
 }

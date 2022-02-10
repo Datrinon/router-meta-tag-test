@@ -7,21 +7,45 @@ import { Header } from './Shared/Header';
 import { MetaDiagnostic } from './Shared/MetaDiagnostic';
 
 import { HelmetProvider, Helmet } from 'react-helmet-async';
+import Page from './Page';
+
+import { MetaTagGroup } from './../models/MetaTagGroup';
 
 function App() {
   return (
     <HelmetProvider>
       <Helmet>
-        <meta name="robots" content="index, follow"/>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <BrowserRouter>
         <div className="App">
           <Header />
           <main className="content">
             <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route exact path="/about" element={<About />} />
-              <Route exact path="/help" element={<Help />} />
+              <Route
+                path="/"
+                element={
+                  <Page meta={new MetaTagGroup("App Home", "B", "C", "D", "E")}>
+                    <Home />
+                  </Page>
+                }
+              />
+              <Route
+                path="/about"
+                element={
+                  <Page meta={new MetaTagGroup("App About", "2", "3", "4", "5")}>
+                    <About />
+                  </Page>
+                }
+              />
+              <Route
+                path="/help"
+                element={
+                  <Page meta={new MetaTagGroup("App Help", "X", "X", "W", "Z")}>
+                    <Help />
+                  </Page>
+                }
+              />
             </Routes>
           </main>
           <MetaDiagnostic />

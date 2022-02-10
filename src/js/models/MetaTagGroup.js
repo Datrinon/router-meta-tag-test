@@ -18,3 +18,5 @@ class MetaTagGroup {
     this.image = image;
   }
 }
+
+export { MetaTagGroup };
