@@ -1,0 +1,51 @@
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  max-width: 800vw;
+  margin: 0 auto;
+}
+
+.nav-links .nav-link {
+  font-size: 150%;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: border-color 300ms;
+}
+
+.nav-links .nav-link:visited {
+  color: inherit;
+}
+
+.nav-links .nav-link.active {
+  border: 1px solid black;
+}
+
+.App .content {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.App .meta-diagnostic {
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding: 1em;
+  text-align : left;
+  font-family: "Consolas";
+  width: 1200px;
+}
+
+.meta-result .meta-label {
+  font-weight: bold;
+}
+
+.meta-result .meta-attr-info {
+  margin-left: 0.5em;
+}
+
+.meta-result .attr-name {
+  font-weight: bold;
+  padding-right: 0.5em;
+}
