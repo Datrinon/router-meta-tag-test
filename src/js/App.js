@@ -7,11 +7,14 @@ import Help from './Help';
 import { Header } from './Header';
 import { MetaDiagnostic } from './MetaDiagnostic';
 
-import { HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 function App() {
   return (
     <HelmetProvider>
+      <Helmet>
+        <meta name="robots" content="index, follow"/>
+      </Helmet>
       <BrowserRouter>
         <div className="App">
           <Header />

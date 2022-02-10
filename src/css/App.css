@@ -35,6 +35,10 @@
   text-align : left;
   font-family: "Consolas";
   width: 1200px;
+  max-width: 80%;
+  height: 800px;
+  max-height: 80%;
+  overflow-y: scroll;
 }
 
 .meta-result .meta-label {
