@@ -24,7 +24,9 @@ const GET_DOMAIN_REGEX = new RegExp(/^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?(
  * @param {string} image - An image URL to represent the displayed meta tag.
  * Recommended to be in 2:1 ratio (e.g. 1200 x 630).
  */
-function MetaTags({ url, type, title, description, image }) {
+function MetaTags({ type, title, description, image }) {
+
+  const url = window.location.href;
 
   return (
     <Helmet>

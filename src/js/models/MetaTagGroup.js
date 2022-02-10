@@ -10,8 +10,7 @@
  * Recommended to be in 2:1 ratio (e.g. 1200 x 630).
  */
 class MetaTagGroup {
-  constructor(title, url, type, description, image) {
-    this.url = url;
+  constructor(title, type, description, image) {
     this.type = type;
     this.title = title;
     this.description = description;

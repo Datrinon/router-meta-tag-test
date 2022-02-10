@@ -25,7 +25,7 @@ function App() {
               <Route
                 path="/"
                 element={
-                  <Page meta={new MetaTagGroup("App Home", "B", "C", "D", "E")}>
+                  <Page meta={new MetaTagGroup("App Home", "C", "D", "E")}>
                     <Home />
                   </Page>
                 }
@@ -33,7 +33,7 @@ function App() {
               <Route
                 path="/about"
                 element={
-                  <Page meta={new MetaTagGroup("App About", "2", "3", "4", "5")}>
+                  <Page meta={new MetaTagGroup("App About", "3", "4", "5")}>
                     <About />
                   </Page>
                 }
@@ -41,7 +41,7 @@ function App() {
               <Route
                 path="/help"
                 element={
-                  <Page meta={new MetaTagGroup("App Help", "X", "X", "W", "Z")}>
+                  <Page meta={new MetaTagGroup("App Help", "X", "W", "Z")}>
                     <Help />
                   </Page>
                 }
