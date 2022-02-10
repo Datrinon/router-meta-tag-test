@@ -1,5 +1,0 @@
-class MetaTags {
-  constructor() {
-    
-  }
-}
