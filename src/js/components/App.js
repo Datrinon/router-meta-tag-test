@@ -1,11 +1,10 @@
-import logo from '../images/logo.svg';
-import '../css/App.css';
+import '../../css/App.css';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Help from './Help';
-import { Header } from './Header';
-import { MetaDiagnostic } from './MetaDiagnostic';
+import { Header } from './Shared/Header';
+import { MetaDiagnostic } from './Shared/MetaDiagnostic';
 
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 

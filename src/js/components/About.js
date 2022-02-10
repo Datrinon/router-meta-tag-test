@@ -11,7 +11,7 @@ function About() {
         <meta property="og:title" content="page.title / make this customizable!" />
         <meta property="og:description" content="About page!" />
     </Helmet>
-    <div>We've been open since forever.</div>
+    <div>This is the about page.</div>
     </>
   )
 }
