@@ -54,11 +54,3 @@ function MetaTags({ type, title, description, image }) {
 }
 
 export default MetaTags
-
-
-MetaTags.propTypes = {
-  type: PropTypes.string,
-  title: PropTypes.string,
-  description: PropTypes.string,
-  image: PropTypes.string
-}
